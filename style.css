@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(253, 248, 248);
+  color: #333333;
+  padding: 1em;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  border: 1px solid black;
+}
+
+figure {
+    text-align: center; /* Centraliza a imagem e o texto */
+    margin: 0; /* Remove margens padrão */
+}
