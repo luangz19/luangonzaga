@@ -3,6 +3,7 @@ body {
   color: #333333;
   padding: 1em;
   margin: 0;
+  line-height: 1.6;
 }
 
 * {
@@ -10,10 +11,31 @@ body {
 }
 
 img {
-  border: 1px solid black;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
 }
 
 figure {
-    text-align: center; /* Centraliza a imagem e o texto */
-    margin: 0; /* Remove margens padrão */
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  margin-bottom: 40px;
+}
+
+h2, h4 {
+  margin-bottom: 15px;
+}
+
+.justify {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .justify {
+    text-align: left;
+  }
 }
