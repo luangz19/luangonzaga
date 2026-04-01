@@ -11,10 +11,8 @@ body {
 }
 
 img {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  max-width: 100%;
-  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 figure {
