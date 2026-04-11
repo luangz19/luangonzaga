@@ -23,32 +23,6 @@ planBtns.forEach(btn => {
     });
 });
 
-// Simulação de envio do formulário
-const form = document.getElementById('leadForm');
-const feedback = document.getElementById('formFeedback');
-form.addEventListener('submit', function(e){
-    e.preventDefault();
-    const nome = document.getElementById('nome').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const telefone = document.getElementById('telefone').value.trim();
-    if(!nome || !email || !telefone){
-        feedback.innerHTML = '⚠️ Por favor, preencha nome, e-mail e telefone.';
-        feedback.style.color = '#c0392b';
-        setTimeout(()=>{feedback.innerHTML = '';}, 3000);
-        return;
-    }
-    // Simula envio bem sucedido
-    feedback.innerHTML = '✅ Mensagem enviada! Entrarei em contato em até 24h pelo WhatsApp.';
-    feedback.style.color = '#2b7a62';
-    form.reset();
-    setTimeout(()=>{
-        feedback.innerHTML = '';
-    }, 5000);
-    // Opcional: abrir link do WhatsApp (simulação de redirecionamento amigável)
-    // Aqui apenas demonstração: se quiser integrar com número real, descomente:
-    // window.open('https://wa.me/5511987654321?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20de%20matemática', '_blank');
-});
-
 // Navegação suave para links internos
 document.querySelectorAll('.nav-links a').forEach(anchor => {
     anchor.addEventListener('click', function(e){
