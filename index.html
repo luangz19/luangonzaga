@@ -143,20 +143,22 @@
                 <div class="contact-form">
                     <h3>Peça seu contato ou aula teste</h3>
                     <form action="https://formspree.io/f/meepyoqd" method="POST">
-                        <div class="form-group"><input type="text" id="nome" placeholder="Seu nome completo" required></div>
-                        <div class="form-group"><input type="email" id="email" placeholder="Melhor e-mail" required></div>
-                        <div class="form-group"><input type="tel" id="telefone" placeholder="WhatsApp com DDD" required></div>
+                        <div class="form-group"><input type="text" name="nome" placeholder="Seu nome completo" required></div>
+                        <div class="form-group"><input type="email" name="email" placeholder="Melhor e-mail" required></div>
+                        <div class="form-group"><input type="tel" name="telefone" placeholder="WhatsApp com DDD" required></div>
                         <div class="form-group">
-                            <select id="interesse">
+                            <select name="interesse">
                                 <option value="">Gostaria de...</option>
                                 <option>Aula experimental gratuita</option>
                                 <option>Informações sobre planos</option>
                                 <option>Dúvidas sobre metodologia</option>
                             </select>
                         </div>
-                        <div class="form-group"><textarea rows="2" placeholder="Conte um pouco sobre sua dificuldade em matemática..."></textarea></div>
+                        <div class="form-group"><textarea name="mensagem" rows="2" placeholder="Conte um pouco sobre sua dificuldade em matemática..."></textarea></div>
                         <!-- Campo oculto para redirecionamento após envio (opcional) -->
                         <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+                        <!-- Personaliza o assunto do email -->
+                        <input type="hidden" name="_subject" value="Novo Lead - Matemática++">
                         <button type="submit" id="submitFormBtn"><i class="fas fa-paper-plane"></i> Enviar mensagem</button>
                     </form>
                     <p id="formFeedback" style="margin-top: 16px; font-size:0.85rem; color:#2b7a62;"></p>
