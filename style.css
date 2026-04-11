@@ -330,19 +330,19 @@ body {
 }
 
 .price-card.featured {
-    background: #0a2942;
-    color: white;
+    background: white;
+    color: #0f3557;
     transform: scale(1.02);
     border: none;
 }
 
 .price-card.featured .price-value,
 .price-card.featured h3 {
-    color: white;
+    color: #0f3557;
 }
 
 .price-card.featured .btn-price {
-    background: #ffcd7e;
+    background: white;
     color: #1E4A76;
 }
 
