@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Logo Math++</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px;
+        }
+        
+        /* Logo principal - fundo branco com sombra */
+        .logo {
+            font-size: 4rem;
+            font-weight: 800;
+            font-family: 'Segoe UI', 'Inter', system-ui, sans-serif;
+            letter-spacing: -1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: white;
+            padding: 20px 40px;
+            border-radius: 80px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .logo i {
+            font-size: 3.5rem;
+            color: #1E4A76;
+        }
+        
+        .logo .math-text {
+            background: linear-gradient(135deg, #1E4A76, #0f3557);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .logo .math-plus {
+            color: #2b7a62;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <i class="fas fa-calculator"></i>
+        <span>
+            <span class="math-text">Math</span><span class="math-plus">++</span>
+        </span>
+    </div>
+</body>
+</html>

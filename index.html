@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Matemática Fácil - Reforço Escolar</title>
+    <!-- Google Fonts e Font Awesome para ícones e tipografia moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <i class="fas fa-calculator"></i> Math<span style="color:#2b7a62;">++</span>
+        </div>
+        <div class="nav-links">
+            <a href="#sobre">Sobre</a>
+            <a href="#metodologia">Metodologia</a>
+            <a href="#planos">Planos</a>
+            <a href="#contato" class="btn-contato-nav">Fale comigo</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero principal -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-chalkboard-teacher"></i> +100 alunos conseguiram melhorar as notas
+                </div>
+                <h1>Reforço em Matemática que <span>transforma</span> dificuldade em confiança</h1>
+                <p class="hero-desc">Aulas personalizadas, didática leve e foco no aprendizado real. Para alunos do 6º ao 9º.</p>
+                <div class="hero-stats">
+                    <div class="stat-item"><span class="stat-number">100%</span> <span>online</span></div>
+                    <div class="stat-item"><span class="stat-number">3+</span> <span>anos de experiência</span></div>
+                    <div class="stat-item"><span class="stat-number">1.200+</span> <span>horas de aula</span></div>
+                </div>
+                <div class="hero-actions">
+                    <button class="btn-primary" id="ctaHeroBtn"><i class="fab fa-whatsapp"></i> Agende sua aula grátis</button>
+                    <button class="btn-outline" id="scrollPlanosBtn">Ver planos</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Imagem ilustrativa SVG / matemática -->
+                <img src="https://placehold.co/500x400/eef2f7/1E4A76?text=Nº+de+Vagas:+5&font=montserrat" alt="Estudante aprendendo matemática" style="background:#eef2f7; object-fit: cover;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2 class="section-title">Por que escolher minhas aulas?</h2>
+            <p class="section-sub">Método exclusivo que une teoria sólida com exercícios práticos e acompanhamento contínuo</p>
+            <div class="cards">
+                <div class="card"><i class="fas fa-user-graduate"></i><h3>Atendimento personalizado</h3><p>Aulas sob medida para as dificuldades e objetivos do aluno.</p></div>
+                <div class="card"><i class="fas fa-chart-line"></i><h3>Acompanhamento semanal</h3><p>Relatórios de evolução e materiais exclusivos.</p></div>
+                <div class="card"><i class="fas fa-laptop-code"></i><h3>Aulas online</h3><p>Flexibilidade total com a plataforma Google Meet.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodologia -->
+    <section id="metodologia" class="section">
+        <div class="container">
+            <div class="method-box">
+                <div class="method-text">
+                    <h3>📐 Metodologia que <span style="color:#2b7a62;">funciona</span></h3>
+                    <p>Não adianta decorar fórmulas sem entender a lógica. Minhas aulas conectam conceitos à realidade do aluno, utilizando recursos visuais e exercícios progressivos.</p>
+                    <ul class="method-list">
+                        <li><i class="fas fa-check-circle"></i> Diagnóstico inicial completo e plano de estudos</li>
+                        <li><i class="fas fa-check-circle"></i> Aulas dinâmicas com resolução de problemas</li>
+                        <li><i class="fas fa-check-circle"></i> Simulados e revisões periódicas</li>
+                        <li><i class="fas fa-check-circle"></i> Suporte por WhatsApp entre as aulas</li>
+                    </ul>
+                </div>
+                <div class="method-image">
+                    <i class="fas fa-chalkboard-user" style="font-size: 5rem; color:#1E4A76;"></i>
+                    <p style="margin-top: 16px;"><strong>+ de 85%</strong> dos alunos melhoram notas em menos de 2,5 meses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos e Preços -->
+    <section id="planos" class="section">
+        <div class="container">
+            <h2 class="section-title">Planos sob medida para você</h2>
+            <p class="section-sub">Sem taxas escondidas. Escolha o melhor formato e comece hoje mesmo.</p>
+            <div class="price-grid">
+                <div class="price-card">
+                    <h3>Mensal</h3>
+                    <div class="price-value">R$ 350<span style="font-size:1rem;">/mês</span></div>
+                    <p class="price-desc">15 aulas de (30m) + material digital</p>
+                    <button class="btn-price planBtn" data-plano="Mensal">Quero esse plano</button>
+                </div>
+                <div class="price-card featured">
+                    <h3>Trimestral</h3>
+                    <div class="price-value">R$ 750<span style="font-size:1rem;">/trimestre</span></div>
+                    <p class="price-desc">18 aulas de (30m) + material digital</p>
+                    <button class="btn-price planBtn" data-plano="Trimestral">Mais vantajoso</button>
+                </div>
+                <div class="price-card">
+                    <h3>Avulso</h3>
+                    <div class="price-value">R$ 60<span style="font-size:1rem;">/aula</span></div>
+                    <p class="price-desc">Aula de 30 minutos, sem fidelidade</p>
+                    <button class="btn-price planBtn" data-plano="Avulso">Agendar aula</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="section">
+        <div class="container">
+            <div class="testimonials">
+                <h2 class="section-title" style="margin-bottom: 24px;">Veja o que os pais dos meus alunos dizem sobre meu trabalho</h2>
+                <div class="testi-grid">
+                    <div class="testi-item"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Meu filho mudou de nota, saiu de 4 para 9 em matemática em 3 meses. Professor incrível e metodologia bem leve!"</p><strong>— Mariana L.</strong></div>
+                    <div class="testi-item"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Graças ao reforço do Professor Luan Gonzaga, meu filho consegiu entender multiplicação e divisão com frações."</p><strong>— Rafael C.</strong></div>
+                    <div class="testi-item"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div><p>"Meu filho ganhou confiança e melhorou as notas na escola. Super recomendo!"</p><strong>— Sandra M.</strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato e formulário -->
+    <section id="contato" class="section">
+        <div class="container">
+            <div class="contact-flex">
+                <div class="contact-info">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 24px;">Vamos conversar?</h3>
+                    <p style="margin-bottom: 32px;">Tire suas dúvidas, faça uma aula experimental gratuita ou defina seu plano ideal.</p>
+                    <div class="contact-detail"><i class="fab fa-whatsapp"></i> <span>(92) 98174-2149</span></div>
+                    <div class="contact-detail"><i class="far fa-envelope"></i> <span>luangonzaga19@gmail.com</span></div>
+                    <div class="contact-detail"><i class="fas fa-map-marker-alt"></i> <span>Atendimento online (Brasil)</span></div>
+                </div>
+                <div class="contact-form">
+                    <h3>Peça seu contato ou aula teste</h3>
+                    <form id="leadForm" action="https://formspree.io/f/meepyoqd" method="POST">
+                        <div class="form-group"><input type="text" id="nome" placeholder="Seu nome completo" required></div>
+                        <div class="form-group"><input type="email" id="email" placeholder="Melhor e-mail" required></div>
+                        <div class="form-group"><input type="tel" id="telefone" placeholder="WhatsApp com DDD" required></div>
+                        <div class="form-group">
+                            <select id="interesse">
+                                <option value="">Gostaria de...</option>
+                                <option>Aula experimental gratuita</option>
+                                <option>Informações sobre planos</option>
+                                <option>Dúvidas sobre metodologia</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><textarea rows="2" placeholder="Conte um pouco sobre sua dificuldade em matemática..."></textarea></div>
+                        <!-- Campo oculto para redirecionamento após envio (opcional) -->
+                        <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+                        <button type="submit" id="submitFormBtn"><i class="fas fa-paper-plane"></i> Enviar mensagem</button>
+                    </form>
+                    <p id="formFeedback" style="margin-top: 16px; font-size:0.85rem; color:#2b7a62;"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Seção Sobre Mim - Professor(a) -->
+<section class="section about-teacher" id="sobre-mim">
+    <div class="container">
+        <div class="teacher-card">
+            <div class="teacher-avatar">
+                <!-- Substitua o link da imagem pela sua foto real -->
+                <img src="imagens/Luan.png" alt="Foto do Professor">
+                <div class="teacher-badge">
+                    <i class="fas fa-chalkboard-user"></i> 3+ anos ensinando
+                </div>
+            </div>
+            <div class="teacher-info">
+                <h2 class="teacher-name">Prof. Me. Luan Gonzaga</h2>
+                <p class="teacher-title">Licenciado em Matemática | Mestre em Matemática Aplicada</p>
+                <div class="teacher-desc">
+                    <p>✨ Desde 2019, dedico minha vida a mostrar que matemática não é um bicho de sete cabeças. Comecei dando aulas particulares no meu bairro e hoje já ajudei mais de 100 alunos a perderem o medo dos números e conquistarem aprovações na disciplina.</p>
+                    <p>📚 Minha abordagem é simples: <strong>paciência, exemplos do dia a dia e muita prática</strong>. Acredito que cada aluno tem seu ritmo, e meu trabalho é adaptar o conteúdo para que o aluno se sinta no controle da matéria — e não o contrário.</p>
+                    <p>🏆 Fora da sala de aula, sou apaixonado por jogos de tabuleiro, lógica de programação em Python e contrução de tabelas em Excel. É de lá que tiro muitas ideias para tornar as aulas mais leves e interessantes.</p>
+                </div>
+                <div class="teacher-stats-mini">
+                    <div><i class="fas fa-graduation-cap"></i> +100 alunos</div>
+                    <div><i class="fas fa-chart-line"></i> 98% na melhora das notas</div>
+                    <div><i class="fas fa-heart"></i> 80+ recomendações</div>
+                </div>
+                <button class="btn-primary teacher-contact-btn" id="ctaTeacherBtn">
+                    <i class="fab fa-whatsapp"></i> Agendar conversa comigo
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div><i class="fas fa-calculator"></i> Math++ Reforço Inteligente<br><span style="font-size:0.85rem;">Aprender matemática é uma jornada, nós te acompanhamos.</span></div>
+            <div><strong>Links rápidos</strong><br><a href="#sobre" style="color:#cbd5e0; text-decoration:none;">Sobre</a><br><a href="#metodologia" style="color:#cbd5e0; text-decoration:none;">Metodologia</a><br><a href="#planos" style="color:#cbd5e0; text-decoration:none;">Planos</a></div>
+            <div><strong>Atendimento</strong><br>📞 (92) 98174-2149<br>✉️ luangonzaga19@gmail.com</div>
+        </div>
+        <div class="footer-copy">© 2025 Matemática++ | Reforço escolar com excelência | Todos os direitos reservados</div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
