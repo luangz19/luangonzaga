@@ -133,6 +133,7 @@ body {
     color: #3a546d;
     margin-bottom: 28px;
     max-width: 90%;
+    text-align: justify;
 }
 
 .hero-stats {
@@ -276,6 +277,7 @@ body {
 
 .method-text {
     flex: 1.4;
+    text-align: justify;
 }
 
 .method-text h3 {
@@ -579,6 +581,7 @@ footer {
     letter-spacing: -0.2px;
 }
 .teacher-desc p {
+    text-align: justify;
     margin-bottom: 16px;
     color: #2c3e4e;
     line-height: 1.5;
