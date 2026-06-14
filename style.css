@@ -573,7 +573,6 @@ footer {
 /* ==========================
    PUBLICAÇÕES E PESQUISAS
 ========================== */
-/* PUBLICAÇÕES */
 
 .price-grid{
     display:grid;
@@ -613,4 +612,102 @@ footer {
 
 .btn-price{
     margin-top:auto;
+}
+
+/* ===========================
+   CONTATO ACADÊMICO
+=========================== */
+
+.contact-info{
+    width: 100%;
+    max-width: 1120px;
+}
+
+.contact-title{
+    font-size: 2.4rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Linha igual à seção Materiais */
+.contact-title::after{
+    content: "";
+    display: block;
+    width: 72px;
+    height: 3px;
+    background: var(--accent);
+    margin-top: 12px;
+}
+
+.contact-text{
+    color: var(--muted);
+    max-width: 760px;
+    margin-bottom: 35px;
+    text-align: left;
+    font-size: 1.05rem;
+}
+
+.academic-links{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.academic-item{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 24px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    text-decoration: none;
+    color: var(--ink);
+    transition: .25s ease;
+}
+
+.academic-item:hover{
+    border-color: var(--accent);
+    box-shadow: var(--shadow);
+}
+
+.academic-item i{
+    width: 32px;
+    text-align: center;
+    font-size: 1.35rem;
+    color: var(--accent);
+}
+
+.academic-item strong{
+    display: block;
+    color: var(--primary);
+    font-family: Inter, Arial, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 3px;
+}
+
+.academic-item span{
+    color: var(--muted);
+    font-size: .92rem;
+}
+
+/* Responsivo */
+
+@media (max-width: 768px){
+
+    .contact-title{
+        font-size: 2rem;
+    }
+
+    .academic-item{
+        padding: 16px;
+        gap: 14px;
+    }
+
+    .academic-item i{
+        font-size: 1.2rem;
+        width: 24px;
+    }
 }
