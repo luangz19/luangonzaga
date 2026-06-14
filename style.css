@@ -618,20 +618,18 @@ footer {
    CONTATO ACADÊMICO
 =========================== */
 
-.contact-info{
-    width: 100%;
-    max-width: 1120px;
+#contato {
+    padding: 70px 0;
 }
 
-.contact-title{
+#contato .contact-title {
     font-size: 2.4rem;
     color: var(--primary);
     margin-bottom: 15px;
     text-align: left;
 }
 
-/* Linha igual à seção Materiais */
-.contact-title::after{
+#contato .contact-title::after {
     content: "";
     display: block;
     width: 72px;
@@ -640,7 +638,7 @@ footer {
     margin-top: 12px;
 }
 
-.contact-text{
+#contato .contact-text {
     color: var(--muted);
     max-width: 760px;
     margin-bottom: 35px;
@@ -648,66 +646,51 @@ footer {
     font-size: 1.05rem;
 }
 
-.academic-links{
+#contato .academic-links {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 16px;
     width: 100%;
-    margin-top: 35px;
 }
 
-.academic-item{
+#contato .academic-item {
     display: flex;
     align-items: center;
     gap: 18px;
-    padding: 18px 24px;
-    background: var(--paper);
+    padding: 20px 24px;
+    background: #fff;
     border: 1px solid var(--line);
     text-decoration: none;
     color: var(--ink);
-    transition: .25s ease;
+    transition: all .25s ease;
 }
 
-.academic-item:hover{
+#contato .academic-item:hover {
     border-color: var(--accent);
     box-shadow: var(--shadow);
 }
 
-.academic-item i{
+#contato .academic-item i {
     width: 32px;
     text-align: center;
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     color: var(--accent);
+    flex-shrink: 0;
 }
 
-.academic-item strong{
-    display: block;
+#contato .academic-item div {
+    display: flex;
+    flex-direction: column;
+}
+
+#contato .academic-item strong {
     color: var(--primary);
     font-family: Inter, Arial, sans-serif;
     font-size: 1rem;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
 
-.academic-item span{
+#contato .academic-item span {
     color: var(--muted);
     font-size: .92rem;
-}
-
-/* Responsivo */
-
-@media (max-width: 768px){
-
-    .contact-title{
-        font-size: 2rem;
-    }
-
-    .academic-item{
-        padding: 16px;
-        gap: 14px;
-    }
-
-    .academic-item i{
-        font-size: 1.2rem;
-        width: 24px;
-    }
 }
